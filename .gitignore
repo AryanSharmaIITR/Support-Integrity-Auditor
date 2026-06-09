@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+.python-version
+pyproject.toml
+uv.lock
+requirements.txt
+dataset/

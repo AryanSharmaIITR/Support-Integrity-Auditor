@@ -224,3 +224,4 @@ dataset/
 Notebook/lora_tabular_model
 Notebook/distilbert_mismatch
 Notebook/deberta_mismatch
+Artifacts/

@@ -219,7 +219,6 @@ __marimo__/
 .python-version
 pyproject.toml
 uv.lock
-requirements.txt
 dataset/
 Notebook/lora_tabular_model
 Notebook/distilbert_mismatch

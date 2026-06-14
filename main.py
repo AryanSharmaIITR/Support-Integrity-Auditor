@@ -1,6 +1,13 @@
+import os
+os.environ["TRANSFORMERS_VERBOSITY"] = "error"
+
 import numpy as np
 import pandas as pd
 import streamlit as st
+
+from transformers.utils import logging as hf_logging
+
+hf_logging.set_verbosity_error()
 
 from script.train_classifier import SeverityClassifier
 from script.evidence_dossier_generation import EvidenceDossierGenerator

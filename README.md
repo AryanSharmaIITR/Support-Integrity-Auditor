@@ -40,6 +40,9 @@ Is_Mismatch = (priority != inferred_severity)
 
 1. **LLM signal** - Gemma-2-2B (4-bit) reads the subject + description and scores
    LOW/MEDIUM/HIGH/CRITICAL. Output is constrained to just those 4 tokens.
+   To use Gemma-2-2B for label generation you must first authorize your Hugging
+   Face account by accepting Google's terms on the model's Hugging Face page (and
+   be logged in via `huggingface-cli login`).
 2. **Embedding signal** - cosine similarity between the ticket and a few anchor
    sentences per severity, using MiniLM (`all-MiniLM-L6-v2`).
 3. **Category + resolution signal** - a lookup table over `Issue_Category` and
